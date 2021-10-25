@@ -1,47 +1,49 @@
-[
-    {
-        "id": 1,
-        "name": "iPhone 13",
-        "base_model": true
-    },
-    {
-        "id": 2,
-        "name": "iPhone 13 Mini",
-        "base_model": false
-    },
-    {
-        "id": 3,
-        "name": "iPhone13 Pro",
-        "base_model": false
-    },
-    {
-        "id": 4,
-        "name": "iPhone 13 Pro Max",
-        "base_model": false
-    },
-    {
-        "id": 5,
-        "name": "Samsung Galaxy S21 5G",
-        "base_model": true
-    },
-    {
-        "id": 6,
-        "name": "Samsung Galaxy S21 5G",
-        "base_model": false
-    },
-    {
-        "id": 7,
-        "name": "Samsung Galaxy S21 Ultra 5G",
-        "base_model": false
-    },
-    {
-        "id": 8,
-        "name": "Google Pixel 6",
-        "base_model": true
-    },
-    {
-        "id": 9,
-        "name": "Google Pixel 6 Pro",
-        "base_model": false
-    }
-]
+{
+    "Devices": [
+        {
+            "id": 1,
+            "name": "iPhone 13",
+            "base_model": true
+        },
+        {
+            "id": 2,
+            "name": "iPhone 13 Mini",
+            "base_model": false
+        },
+        {
+            "id": 3,
+            "name": "iPhone13 Pro",
+            "base_model": false
+        },
+        {
+            "id": 4,
+            "name": "iPhone 13 Pro Max",
+            "base_model": false
+        },
+        {
+            "id": 5,
+            "name": "Samsung Galaxy S21 5G",
+            "base_model": true
+        },
+        {
+            "id": 6,
+            "name": "Samsung Galaxy S21 5G",
+            "base_model": false
+        },
+        {
+            "id": 7,
+            "name": "Samsung Galaxy S21 Ultra 5G",
+            "base_model": false
+        },
+        {
+            "id": 8,
+            "name": "Google Pixel 6",
+            "base_model": true
+        },
+        {
+            "id": 9,
+            "name": "Google Pixel 6 Pro",
+            "base_model": false
+        }
+    ]
+}
