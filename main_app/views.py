@@ -1,6 +1,15 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.views.generic import ListView
+import json
+
+with open('device_data.json', 'r') as myfile:
+    device_data = myfile.read()
+
+device_obj = json.loads(device_data)
 
 def home(request):
-    return render(request, 'home.html')    
-# Create your views here.
+    devices = device_obj['Devices']
+    return render(request, 'home.html', {'preloaded_devices': devices})    
+
+
+
