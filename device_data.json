@@ -40,7 +40,7 @@
         },
         {
             "id": 3,
-            "name": "iPhone13 Pro",
+            "name": "iPhone 13 Pro",
             "base_model": false,
             "variants": [
                 {
@@ -101,7 +101,7 @@
         },
         {
             "id": 6,
-            "name": "Samsung Galaxy S21 5G",
+            "name": "Samsung Galaxy S21+ 5G",
             "base_model": false,
             "variants": [
                 {
