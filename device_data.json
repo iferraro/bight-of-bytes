@@ -1,47 +1,171 @@
-[
-    {
-        "id": 1,
-        "name": "iPhone 13",
-        "base_model": true
-    },
-    {
-        "id": 2,
-        "name": "iPhone 13 Mini",
-        "base_model": false
-    },
-    {
-        "id": 3,
-        "name": "iPhone13 Pro",
-        "base_model": false
-    },
-    {
-        "id": 4,
-        "name": "iPhone 13 Pro Max",
-        "base_model": false
-    },
-    {
-        "id": 5,
-        "name": "Samsung Galaxy S21 5G",
-        "base_model": true
-    },
-    {
-        "id": 6,
-        "name": "Samsung Galaxy S21 5G",
-        "base_model": false
-    },
-    {
-        "id": 7,
-        "name": "Samsung Galaxy S21 Ultra 5G",
-        "base_model": false
-    },
-    {
-        "id": 8,
-        "name": "Google Pixel 6",
-        "base_model": true
-    },
-    {
-        "id": 9,
-        "name": "Google Pixel 6 Pro",
-        "base_model": false
-    }
-]
+{
+    "Devices": [
+        {
+            "id": 1,
+            "name": "iPhone 13",
+            "base_model": true,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$799.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$899.00"
+                },
+                {
+                    "storage": 512,
+                    "price": "$1,099.00"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "iPhone 13 Mini",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$699.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$799.00"
+                },
+                {
+                    "storage": 512,
+                    "price": "$999.00"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "iPhone 13 Pro",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$999.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$1,099.00"
+                },
+                {
+                    "storage": 512,
+                    "price": "$1,299.00"
+                },
+                {
+                    "storage": 1000,
+                    "price": "$1,499.00"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "iPhone 13 Pro Max",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$1,099.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$1,199.00"
+                },
+                {
+                    "storage": 512,
+                    "price": "$1,399.00"
+                },
+                {
+                    "storage": 1000,
+                    "price": "$1,599.00"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Samsung Galaxy S21 5G",
+            "base_model": true,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$799.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$849.00"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Samsung Galaxy S21+ 5G",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$999.99"
+                },
+                {
+                    "storage": 256,
+                    "price": "$1,049.99"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Samsung Galaxy S21 Ultra 5G",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$1,199.99"
+                },
+                {
+                    "storage": 256,
+                    "price": "$1,249.99"
+                },
+                {
+                    "storage": 512,
+                    "price": "$1,379.99"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Google Pixel 6",
+            "base_model": true,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$599.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$699.00"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Google Pixel 6 Pro",
+            "base_model": false,
+            "variants": [
+                {
+                    "storage": 128,
+                    "price": "$899.00"
+                },
+                {
+                    "storage": 256,
+                    "price": "$999.00"
+                },
+                {
+                    "storage": 512,
+                    "price": "$1,099.00"
+                }
+            ]
+        }
+    ]
+}
