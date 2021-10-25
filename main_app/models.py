@@ -2,8 +2,17 @@ from django.db import models
 from django.db.models.fields import BooleanField, CharField
 import json
 
-device_dict = json.loads('device_data.json');
-variant_dict = json.loads('variant_data.json');
+with open('device_data.json', 'r') as myfile:
+    device_data=myfile.read()
+    
+device_obj = json.loads(device_data)
+
+with open('variant_data.json', 'r') as myfile:
+    variant_data=myfile.read()
+    
+variant_obj = json.loads(variant_data)
+
+
 
 # Create your models here.
 
