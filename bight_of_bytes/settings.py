@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'bight_of_bytes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bight_of_bytes',
+        'NAME': 'bightofbytes',
     }
 }
 
