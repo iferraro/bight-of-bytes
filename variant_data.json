@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "storage": 128,
+        "price": "$799.00",
+        "device_id": 1
+    },
+    {
+        "id": 2,
+        "storage": 256,
+        "price": "$899.00",
+        "device_id": 1
+    },
+    {
+        "id": 3,
+        "storage": 512,
+        "price": "$1,099.00",
+        "device_id": 1
+    },
+    {
+        "id": 4,
+        "storage": 128,
+        "price": "$699.00",
+        "device_id": 2
+    },
+    {
+        "id": 5,
+        "storage": 256,
+        "price": "$799.00",
+        "device_id": 2
+    },
+    {
+        "id": 6,
+        "storage": 512,
+        "price": "$999.00",
+        "device_id": 2
+    },
+    {
+        "id": 7,
+        "storage": 128,
+        "price": "$999.00",
+        "device_id": 3
+    },
+    {
+        "id": 8,
+        "storage": 256,
+        "price": "$1,099.00",
+        "device_id": 3
+    },
+    {
+        "id": 9,
+        "storage": 512,
+        "price": "$1,299.00",
+        "device_id": 3
+    },
+    {
+        "id": 10,
+        "storage": 1000,
+        "price": "$1,499.00",
+        "device_id": 3
+    },
+    {
+        "id": 11,
+        "storage": 128,
+        "price": "$1,099.00",
+        "device_id": 4
+    },
+    {
+        "id": 12,
+        "storage": 256,
+        "price": "$1,199.00",
+        "device_id": 4
+    },
+    {
+        "id": 13,
+        "storage": 512,
+        "price": "$1,399.00",
+        "device_id": 4
+    },
+    {
+        "id": 14,
+        "storage": 1000,
+        "price": "$1,599.00",
+        "device_id": 4
+    },
+    {
+        "id": 15,
+        "storage": 128,
+        "price": "$799.00",
+        "device_id": 5
+    },
+    {
+        "id": 16,
+        "storage": 256,
+        "price": "$849.00",
+        "device_id": 5
+    },
+    {
+        "id": 17,
+        "storage": 128,
+        "price": "$999.99",
+        "device_id": 6
+    },
+    {
+        "id": 18,
+        "storage": 256,
+        "price": "$1,049.99",
+        "device_id": 6
+    },
+    {
+        "id": 19,
+        "storage": 128,
+        "price": "$1,199.99",
+        "device_id": 7
+    },
+    {
+        "id": 20,
+        "storage": 256,
+        "price": "$1,249.99",
+        "device_id": 7
+    },
+    {
+        "id": 21,
+        "storage": 512,
+        "price": "$1,379.99",
+        "device_id": 7
+    },
+    {
+        "id": 22,
+        "storage": 128,
+        "price": "$599.00",
+        "device_id": 8
+    },
+    {
+        "id": 23,
+        "storage": 256,
+        "price": "$699.00",
+        "device_id": 8
+    },
+    {
+        "id": 24,
+        "storage": 128,
+        "price": "$899.00",
+        "device_id": 9
+    },
+    {
+        "id": 25,
+        "storage": 256,
+        "price": "$999.00",
+        "device_id": 9
+    },
+    {
+        "id": 26,
+        "storage": 512,
+        "price": "$1,099.00",
+        "device_id": 9
+    }
+]
