@@ -7,15 +7,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "799.00"
+                    "price": 799.00
                 },
                 {
                     "storage": 256,
-                    "price": "899.00"
+                    "price": 899.00
                 },
                 {
                     "storage": 512,
-                    "price": "1099.00"
+                    "price": 1099.00
                 }
             ]
         },
@@ -26,15 +26,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "699.00"
+                    "price": 699.00
                 },
                 {
                     "storage": 256,
-                    "price": "799.00"
+                    "price": 799.00
                 },
                 {
                     "storage": 512,
-                    "price": "999.00"
+                    "price": 999.00
                 }
             ]
         },
