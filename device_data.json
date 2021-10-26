@@ -7,15 +7,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$799.00"
+                    "price": "799.00"
                 },
                 {
                     "storage": 256,
-                    "price": "$899.00"
+                    "price": "899.00"
                 },
                 {
                     "storage": 512,
-                    "price": "$1,099.00"
+                    "price": "1099.00"
                 }
             ]
         },
@@ -26,15 +26,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$699.00"
+                    "price": "699.00"
                 },
                 {
                     "storage": 256,
-                    "price": "$799.00"
+                    "price": "799.00"
                 },
                 {
                     "storage": 512,
-                    "price": "$999.00"
+                    "price": "999.00"
                 }
             ]
         },
@@ -45,19 +45,19 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$999.00"
+                    "price": 999.00
                 },
                 {
                     "storage": 256,
-                    "price": "$1,099.00"
+                    "price": 1099.00
                 },
                 {
                     "storage": 512,
-                    "price": "$1,299.00"
+                    "price": 1299.00
                 },
                 {
                     "storage": 1000,
-                    "price": "$1,499.00"
+                    "price": 1499.00
                 }
             ]
         },
@@ -68,19 +68,19 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$1,099.00"
+                    "price": 1099.00
                 },
                 {
                     "storage": 256,
-                    "price": "$1,199.00"
+                    "price": 1199.00
                 },
                 {
                     "storage": 512,
-                    "price": "$1,399.00"
+                    "price": 1399.00
                 },
                 {
                     "storage": 1000,
-                    "price": "$1,599.00"
+                    "price": 1599.00
                 }
             ]
         },
@@ -91,11 +91,11 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$799.00"
+                    "price": 799.00
                 },
                 {
                     "storage": 256,
-                    "price": "$849.00"
+                    "price": 849.00
                 }
             ]
         },
@@ -106,11 +106,11 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$999.99"
+                    "price": 999.99
                 },
                 {
                     "storage": 256,
-                    "price": "$1,049.99"
+                    "price": 1049.99
                 }
             ]
         },
@@ -121,15 +121,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$1,199.99"
+                    "price": 1199.99
                 },
                 {
                     "storage": 256,
-                    "price": "$1,249.99"
+                    "price": 1249.99
                 },
                 {
                     "storage": 512,
-                    "price": "$1,379.99"
+                    "price": 1379.99
                 }
             ]
         },
@@ -140,11 +140,11 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$599.00"
+                    "price": 599.00
                 },
                 {
                     "storage": 256,
-                    "price": "$699.00"
+                    "price": 699.00
                 }
             ]
         },
@@ -155,15 +155,15 @@
             "variants": [
                 {
                     "storage": 128,
-                    "price": "$899.00"
+                    "price": 899.00
                 },
                 {
                     "storage": 256,
-                    "price": "$999.00"
+                    "price": 999.00
                 },
                 {
                     "storage": 512,
-                    "price": "$1,099.00"
+                    "price": 1099.00
                 }
             ]
         }
