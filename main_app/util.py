@@ -13,7 +13,7 @@ def populatedb():
 
             for i in range(len(devices)):
                device = devices[i] 
-               param_list = [ device["id"], device["name"]]
+               param_list = [ device["id"], device["name"] ]
                cursor.execute("INSERT INTO main_app_device (id, name) VALUES (%s, %s) ON CONFLICT DO NOTHING", param_list)
                ## HERE WE CANT VALIDATE THE VARIANTS BC NO VARIANT ID IN JSON
 

@@ -2,7 +2,15 @@
 
 {% block content %}
 <h1>{{ device.name }}</h1>
+{% if variants %}
+<ul>
+    {% for variant in variants %}
+        <li>{{ variant.storage }}GB | ${{ variant.price }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 <form action="" method="post">
+    {% csrf_token %}
     {{ variant_form.as_table }}
     <input type="submit">
 </form>

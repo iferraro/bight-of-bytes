@@ -7,3 +7,6 @@ class VariantForm(ModelForm):
     class Meta:
         model = Variant
         exclude = ['device']
+    # def __init__(self, *args, **kwargs):
+    #     print(kwargs)
+    #     # self.fields['device'] = kwargs['pk']

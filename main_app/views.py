@@ -1,6 +1,7 @@
 from django.db.models import fields
 from django.shortcuts import render, redirect
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView
 from django.views.generic.detail import DetailView
@@ -17,11 +18,11 @@ class DeviceList(ListView):
 def details(request, pk):
     device = Device.objects.get(id=pk)
     print(device)
-    # variants = Variant.objects.get(device_id=pk)
+    variants = Variant.objects.filter(device_id=pk)
     variant_form = VariantForm(request.POST)
     return render(request, 'details.html', {
         'device': device,
-        # 'variants': variants,
+        'variants': variants,
         'variant_form': variant_form
         }
     )
@@ -29,6 +30,7 @@ def details(request, pk):
 class DeviceCreate(CreateView):
     model = Device
     fields = '__all__'
+    
     def form_valid(self, form):
         return super().form_valid(form)
 
