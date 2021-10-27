@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{{ device.name }}</h1>
+<h1>{{ device.name }}</h1>
+<form action="" method="post">
     {{ variant_form.as_table }}
+    <input type="submit">
+</form>
 {% endblock %}
-    
