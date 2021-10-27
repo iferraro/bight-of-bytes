@@ -13,8 +13,8 @@ def populatedb():
 
             for i in range(len(devices)):
                device = devices[i] 
-               param_list = [ device["id"], device["name"], device["base_model"] ]
-               cursor.execute("INSERT INTO main_app_device (id, name, base_model) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING", param_list)
+               param_list = [ device["id"], device["name"]]
+               cursor.execute("INSERT INTO main_app_device (id, name) VALUES (%s, %s) ON CONFLICT DO NOTHING", param_list)
                ## HERE WE CANT VALIDATE THE VARIANTS BC NO VARIANT ID IN JSON
 
             cursor.execute("SELECT count(*) FROM main_app_variant")
