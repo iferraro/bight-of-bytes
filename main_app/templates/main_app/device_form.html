@@ -1,28 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form action="/" method="post">
+<form method="post">
     {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
-    <div id="buttons">
-        <script>
-            const addButton = document.createElement("button");
-            addButton.innerText = "Add Variant"
-            document.body.appendChild(addButton)
-            addButton.addEventListener("click", function () {
-                const storageField = document.createElement("input");
-                storageField.setAttribute("type", "text");
-                storageField.name = "storage"
-                const priceField = document.createElement("input");
-                priceField.setAttribute("type", "number");
-                priceField.name = "price"
-                document.body.appendChild(storageField);
-                document.body.appendChild(priceField);
-            });
-        </script>
-        <input type="submit">
-    </div>
+    {{ form.as_table }}
+    <input type="submit">
 </form>
 {% endblock %}

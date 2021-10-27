@@ -1,9 +1,16 @@
 from django.db import models
+from django.urls import reverse
 #from django.contrib.auth.models import User
 
 class Device(models.Model):
     name = models.CharField(max_length=100)
     base_model = models.BooleanField()
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('details', kwargs={'pk': self.id})
 
 class Variant(models.Model):
     storage = models.IntegerField()

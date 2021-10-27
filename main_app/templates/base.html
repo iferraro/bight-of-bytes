@@ -7,6 +7,10 @@
     <title>Bight of Bytes</title>
 </head>
 <body>
+    <nav>
+        <a href="{% url 'home' %}"><button>Home</button></a>
+        <a href="{% url 'new' %}"><button>Add New Phone</button></a>
+    </nav>
     <main>
         {% block content %}
         {% endblock  %}    
