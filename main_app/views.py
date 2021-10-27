@@ -29,8 +29,8 @@ def details(request, pk):
 
 class DeviceCreate(CreateView):
     model = Device
-    fields = '__all__'
-    
+    fields = ['name']
+    template_name_suffix = '_create_form'
     def form_valid(self, form):
         return super().form_valid(form)
 
