@@ -1,11 +1,12 @@
+from django.db import connection
 from django.db.models import fields
 from django.shortcuts import render, redirect
-from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
+from django.urls import reverse
 from django.views.generic.list import ListView
-from .forms import DeviceForm
-from django.db import connection
-from .models import Device
+from django.views.generic.edit import CreateView
+from django.views.generic.detail import DetailView
+from .forms import VariantForm
+from .models import Device, Variant
 import json
 
 from main_app import models
@@ -43,18 +44,28 @@ def populatedb():
         finally: 
             cursor.close()
     
-# class DeviceList(ListView):
-#     model = Device    
-
-def home(request):
-    return render(request, 'home.html')
-
-class DeviceDetail(DetailView):
+class DeviceList(ListView):
     model = Device
+    fields = ['name']
+          
+def details(request, pk):
+    device = Device.objects.get(id=pk)
+    print(device)
+    # variants = Variant.objects.get(device_id=pk)
+    variant_form = VariantForm(request.POST)
+    return render(request, 'details.html', {
+        'device': device,
+        # 'variants': variants,
+        'variant_form': variant_form
+        }
+    )
 
 class DeviceCreate(CreateView):
     model = Device
-    fields = ['name', 'base_model']
+    fields = '__all__'
+    def form_valid(self, form):
+        return super().form_valid(form)
+
 
 
 

@@ -2,15 +2,4 @@
 
 {% block content %}
 <h1>You made it</h1>
-{% for device in preloaded_devices %}
-<h2>
-    {{ device.name }}
-    <ul>
-        {% for variant in device.variants %}
-        <li>{{ variant.storage }}GB | {{ variant.price }}</li>
-        {% endfor %}
-    </ul>
-</h2>
-{% endfor %}
-<a href="{% url 'new' %}">Go to create page</a>
 {% endblock %}

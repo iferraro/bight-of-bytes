@@ -1,10 +1,7 @@
-from django.forms import ModelForm, fields
+from django.db.models import fields
+from django.forms import ModelForm
 from .models import Device, Variant
-
-class DeviceForm(ModelForm):
-    class Meta:
-        model = Device
-        fields = '__all__'
+from main_app import models
 
 class VariantForm(ModelForm):
     class Meta:
