@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+  --theme-font: 'Bebas Neue', cursive;
+}
+
 body {
     background-image:url(https://i.redd.it/n6rxv4lf09n01.png);
-    background-color: rgba(224, 235, 235, .5);
+    /* background-color: rgba(224, 235, 235, .5); */
     background-size: 217px 150px;
     opacity: 80%;
-    font-family: 'Bebas Neue', cursive;    
+    font-family: var(--theme-font);    
 }
 
 main {
@@ -20,15 +24,14 @@ ul {
 nav {
   margin-bottom: 50px;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
 }
 
 button {
-  font-family: 'Bebas Neue', cursive;
+  font-family: var(--theme-font);
 }
 
 input {
-  font-family: 'Bebas Neue', cursive;
+  font-family: var(--theme-font);
 }
 
 label {
@@ -41,7 +44,7 @@ form label {
 }
 
 .errorlist {
-  font-size: 8px;
+  display: none;
 }
 
 /* unvisited link */
