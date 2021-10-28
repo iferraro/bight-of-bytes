@@ -7,3 +7,4 @@ class VariantForm(ModelForm):
     class Meta:
         model = Variant
         exclude = ['device']
+        
