@@ -1,33 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap');
 
 :root {
-  --theme-font: 'Bebas Neue', cursive;
+  --theme-font: 'Sora', sans-serif;
+  --big-font-weight: 700;
+  --theme-color-light: #1FB5DE;
+  --theme-color-medium: #007696;
+  --theme-color-dark: #004056;
+  --main-font-color: black;
+  --secondary-font-color: white;
 }
 
 body {
     background-image:url(https://i.redd.it/n6rxv4lf09n01.png);
-    /* background-color: rgba(224, 235, 235, .5); */
     background-size: 217px 150px;
     opacity: 80%;
-    font-family: var(--theme-font);    
+    font-family: var(--theme-font);   
 }
 
 main {
   text-align:center;
 }
 
-ul {
+h1 {
   text-align: center;
-  list-style-position: inside;
+  font-size: 40px;
+  font-weight: var(--big-font-weight);
+  color: var(--main-font-color); 
+}
+
+#heading {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+#heading:hover {
+  color: var(--theme-color-dark);
+  transition: 150ms cubic-bezier(.81,.29,.06,.94);
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
-  text-align: center;
 }
 
-button {
+button, p, form label, input {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button, .btn {
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  color: var(--secondary-font-color);
+  background-color: var(--theme-color-medium);
   font-family: var(--theme-font);
+}
+
+nav button {
+  background-color: var(--theme-color-light);
+}
+
+button:hover, .btn:hover {
+  background-color: var(--theme-color-dark);
+  transition: 150ms cubic-bezier(.81,.29,.06,.94);
 }
 
 input {
@@ -39,35 +78,16 @@ label {
   padding-top: 10px;
 }
 
-form label {
-  font-size: 12px;
-}
-
 .errorlist {
   display: none;
 }
 
-/* unvisited link */
-main a:link {
-    color: rgb(153, 146, 146);
-    border-style: hidden;
-    border-radius: 3%;
-    text-decoration: none;
-  }
-
-  /* visited link */
-a:visited {
-  color: dimgray;
+a {
+  color: #353535;
+  text-decoration: none;
 }
-  
-  /* mouse over link */
-main a:hover {
-    color: rgb(80, 77, 78);
+
+a:hover {
+    color: var(--theme-color-dark);
     text-decoration: none;
-  }
-  
-  /* selected link */
-main a:active {
-    color: blue;
-    text-decoration: none;
-  }
+}
