@@ -31,7 +31,6 @@ def signup(request):
         {'form': form, 'error_message': error_message}
     )
 
-
 class DeviceList(ListView):
     model = Device
     fields = ['name']
@@ -74,7 +73,3 @@ class VariantUpdate(LoginRequiredMixin, UpdateView):
         this_dev_id = Device.objects.get(id=self.object.device_id).id
         return reverse('details', kwargs={'dev_pk': this_dev_id})
     
-    
-
-
-
