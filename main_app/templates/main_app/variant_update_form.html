@@ -6,5 +6,8 @@
     {{ form.as_p }}
     <input type="submit">
 </form>
+<script>
+    const priceField = document.querySelector("#id_price");
+    priceField.setAttribute("placeholder", "Enter price in USD");
+</script>
 {% endblock %}
-    

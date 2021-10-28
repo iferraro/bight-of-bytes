@@ -14,7 +14,8 @@ class DeviceList(ListView):
           
 def details(request, dev_pk):
     device = Device.objects.get(id=dev_pk)
-    variants = Variant.objects.filter(device_id=dev_pk)
+    variants = Variant.objects.filter(device_id=dev_pk).order_by('storage')
+    print(variants)
     variant_form = VariantForm(request.POST)
     return render(request, 'details.html', {
         'device': device,
