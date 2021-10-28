@@ -4,32 +4,30 @@
 {% block content %}
 <h1 id="device-header">{{ device.name }}</h1>
 {% if variants %}
-<ul>
     {% for variant in variants %}
-    <li>
+    <p>
         {% if variant.storage >= 1000 %}
         {{ variant.storage|div:1000 }}TB
         {% else %}
         {{ variant.storage }}GB
         {% endif %}
-        | ${{ variant.price }} | {{ variant.price|div:variant.storage|floatformat:2 }} $/GB
+        | ${{ variant.price }} | ${{ variant.price|div:variant.storage|floatformat:2 }}/GB
         <a href="{% url 'upd_var' variant.pk %}">
             <button>Update</button>
         </a>
-    </li>
+    </p>
     {% endfor %}
 </ul>
 {% endif %}
+<br>
+<h2>Add a New Storage Option</h2>
 <form action="{% url 'add_var' device.pk  %}" method="post">
     {% csrf_token %}
     {{ variant_form.as_p }}
-    <input type="submit">
+    <input type="submit" class="btn">
     <script>
         const storageField = document.querySelector("#id_storage");
         storageField.setAttribute("placeholder", "Enter number of GB");
-        // const gb = document.createElement("span");
-        // gb.innerText = "GB"
-        // storageField.appendChild(gb);
         const priceField = document.querySelector("#id_price");
         priceField.setAttribute("placeholder", "Enter price in USD");
     </script>
