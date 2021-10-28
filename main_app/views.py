@@ -1,3 +1,7 @@
+from django.contrib.auth import login
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView
@@ -8,10 +12,30 @@ from .util import populatedb
     
 # populatedb()
 
+def signup(request):
+    print("made it to signup")
+    error_message = ''
+    if request.method == 'POST':
+        print("POST")
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            print("Success!")
+            user = form.save()
+            login(request, user)
+            return redirect('home')
+        else:
+            error_message = 'Invalid sign-up, try again'
+    print("Not a post")
+    form = UserCreationForm()
+    return render(request, 'registration/signup.html',
+        {'form': form, 'error_message': error_message}
+    )
+
+
 class DeviceList(ListView):
     model = Device
     fields = ['name']
-          
+        
 def details(request, dev_pk):
     device = Device.objects.get(id=dev_pk)
     variants = Variant.objects.filter(device_id=dev_pk).order_by('storage')
@@ -24,13 +48,14 @@ def details(request, dev_pk):
         }
     )
 
-class DeviceCreate(CreateView):
+class DeviceCreate(LoginRequiredMixin, CreateView):
     model = Device
     fields = ['name']
     template_name_suffix = '_create_form'
     def form_valid(self, form):
         return super().form_valid(form)
 
+@login_required
 def add_variant(request, dev_pk):
     print(dev_pk)
     var_form = VariantForm(request.POST)
@@ -40,7 +65,7 @@ def add_variant(request, dev_pk):
         new_var.save()
     return redirect('details', dev_pk=dev_pk)
 
-class VariantUpdate(UpdateView):
+class VariantUpdate(LoginRequiredMixin, UpdateView):
     model = Variant
     fields = ['price']
     template_name_suffix = '_update_form'
