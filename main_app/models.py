@@ -9,11 +9,9 @@ class Device(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('details', kwargs={'pk': self.id})
+        return reverse('details', kwargs={'dev_pk': self.pk})
 
 class Variant(models.Model):
     storage = models.IntegerField()
     price = models.DecimalField(decimal_places=2, max_digits=10)
     device = models.ForeignKey(Device, on_delete=models.CASCADE)
-
-print(type(Variant.device))
