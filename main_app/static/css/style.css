@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image:url(https://i.redd.it/n6rxv4lf09n01.png);
+    background-color: rgba(224, 235, 235, .5);
+    background-size: 217px 150px;
+    opacity: 80%;
+    font-family: 'Bebas Neue', cursive;    
+}
+
+main {
+  text-align:center;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+nav {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;
+}
+
+input {
+  font-family: 'Bebas Neue', cursive;
+}
+
+label {
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+form label {
+  font-size: 12px;
+}
+
+.errorlist {
+  font-size: 8px;
+}
+
+/* unvisited link */
+main a:link {
+    color: rgb(153, 146, 146);
+    border-style: hidden;
+    border-radius: 3%;
+    text-decoration: none;
+  }
+
+  /* visited link */
+a:visited {
+  color: dimgray;
+}
+  
+  /* mouse over link */
+main a:hover {
+    color: rgb(80, 77, 78);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+main a:active {
+    color: blue;
+    text-decoration: none;
+  }

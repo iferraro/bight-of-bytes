@@ -2,7 +2,7 @@
 {% load mathfilters %}
 
 {% block content %}
-<h1>{{ device.name }}</h1>
+<h1 id="device-header">{{ device.name }}</h1>
 {% if variants %}
 <ul>
     {% for variant in variants %}
