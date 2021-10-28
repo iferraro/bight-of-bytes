@@ -6,7 +6,7 @@ from .forms import VariantForm
 from .models import Device, Variant
 from .util import populatedb
     
-populatedb()
+# populatedb()
 
 class DeviceList(ListView):
     model = Device
