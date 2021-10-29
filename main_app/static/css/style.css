@@ -28,6 +28,12 @@ h1 {
   color: var(--main-font-color); 
 }
 
+#links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #heading {
   font-size: 60px;
   margin-bottom: 0;
@@ -62,6 +68,7 @@ button, .btn {
 
 nav button {
   background-color: var(--theme-color-light);
+  margin-right: 8px;
 }
 
 button:hover, .btn:hover {
@@ -71,6 +78,9 @@ button:hover, .btn:hover {
 
 input {
   font-family: var(--theme-font);
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--theme-color-medium);
 }
 
 label {
