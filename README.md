@@ -7,7 +7,9 @@
 ###### This a proof-of-concept idea made into an app. We believe that Bight of Bytes has the potential to grow exponentially as it gets more developed. 
 
 Screenshots:
-    <img src="https://i.imgur.com/pBXmbYl.png">
+<img src="https://i.imgur.com/pBXmbYl.png">
+<br>
+<img src="https://i.imgur.com/mHxqwTb.png">
 
 Technologies:
 -   Python
