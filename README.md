@@ -7,6 +7,7 @@
 ###### This a proof-of-concept idea made into an app. We believe that Bight of Bytes has the potential to grow exponentially as it gets more developed. 
 
 Screenshots:
+<br>
 <img src="https://i.imgur.com/nD9G3It.png">
 <br>
 <img src="https://i.imgur.com/i8ggoX1.png">
