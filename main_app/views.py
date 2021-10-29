@@ -8,9 +8,6 @@ from django.views.generic.edit import CreateView, UpdateView
 from django.urls import reverse
 from .forms import VariantForm
 from .models import Device, Variant
-from .util import populatedb
-    
-# populatedb()
 
 def signup(request):
     print("made it to signup")
