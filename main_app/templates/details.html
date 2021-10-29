@@ -12,14 +12,17 @@
         {{ variant.storage }}GB
         {% endif %}
         | ${{ variant.price }} | ${{ variant.price|div:variant.storage|floatformat:2 }}/GB
+        {% if user.is_authenticated %}
         <a href="{% url 'upd_var' variant.pk %}">
             <button>Update</button>
         </a>
+        {% endif %}
     </p>
     {% endfor %}
 </ul>
 {% endif %}
 <br>
+{% if user.is_authenticated %}
 <h2>Add a New Storage Option</h2>
 <form action="{% url 'add_var' device.pk  %}" method="post">
     {% csrf_token %}
@@ -32,4 +35,5 @@
         priceField.setAttribute("placeholder", "Enter price in USD");
     </script>
 </form>
+{% endif %}
 {% endblock %}
