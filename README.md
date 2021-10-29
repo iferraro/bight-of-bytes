@@ -14,6 +14,7 @@ Screenshots:
 
 Technologies:
 -   Python
+-   Django
 -   HTML
 -   CSS
 -   Heroku
@@ -21,7 +22,7 @@ Technologies:
 -   Google Slides
 -   Lucid
 -   JS
--  [Mathfilters](https://pypi.org/project/django-mathfilters/)(for calculations on Django template)
+-  [Mathfilters](https://pypi.org/project/django-mathfilters/) (for calculations on Django template)
 
 Check out the app [here!](https://bight-of-bytes.herokuapp.com/)
 
