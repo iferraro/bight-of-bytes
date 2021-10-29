@@ -6,13 +6,13 @@
 
 ###### This a proof-of-concept idea made into an app. We believe that Bight of Bytes has the potential to grow exponentially as it gets more developed. 
 
-Screenshots:
+## Screenshots
 <br>
 <img src="https://i.imgur.com/nD9G3It.png">
 <br>
 <img src="https://i.imgur.com/i8ggoX1.png">
 
-Technologies:
+## Technologies
 -   Python
 -   Django
 -   HTML
@@ -20,7 +20,7 @@ Technologies:
 -   Heroku
 -   Trello
 -   Google Slides
--   Lucid
+-   Lucidchart
 -   JS
 -  [Mathfilters](https://pypi.org/project/django-mathfilters/) (for calculations on Django template)
 
@@ -30,7 +30,7 @@ Our [Trello Board](https://trello.com/b/xRmt9PIV/bight-of-bytes)
 
 Our [Pitch Deck](https://docs.google.com/presentation/d/1YDbV3SVLELO-hB_njetRAzgs3eehuN8egM2gUyePXj8/edit?usp=sharing)
 
-Some of our icebox ideas!:
+## Some of our icebox ideas!
 -   A more user-centric approach
 -   Timestamps on edits
 -   Additional $ per additional GB function
